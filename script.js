@@ -38,3 +38,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+
+function calculateSquareRoot() {
+    let display = document.getElementById('display');
+    let value = parseFloat(display.value);
+    if (value >= 0) {
+        display.value = Math.sqrt(value);
+    } else {
+        alert("Por favor, insira um número positivo.");
+    }
+}
+
+function calculatePercentage() {
+    let display = document.getElementById('display');
+    let value = parseFloat(display.value);
+    display.value = value / 100;
+}
